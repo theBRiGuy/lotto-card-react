@@ -46,6 +46,7 @@ class LottoCardSet extends Component {
 
     return (
       <div className="LottoCardSet">
+        <h1>Select your numbers, {this.props.maxNums} per card:</h1>
         {noCards}
         <ul className="LottoCardSet__lottoCardList">
           {this.state.cards.map(card => <LottoCard handleRemoveCard={this.handleRemoveCard} key={card.id} id={card.id} maxNums={this.props.maxNums} />)}
