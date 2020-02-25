@@ -1,3 +1,9 @@
+# Lotto Card React
+
+A fun, simple React app (with basic styling) to choose lottery numbers.
+
+For a newer version that uses Hooks (instead of classes), check out https://github.com/theBRiGuy/lotto-card-react-hooks.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
