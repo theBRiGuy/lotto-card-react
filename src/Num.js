@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import './Num.scss';
+import ToggleButton from 'react-bootstrap/ToggleButton';
+// import './Num.scss';
 
 class Num extends Component {
 
@@ -24,22 +25,26 @@ class Num extends Component {
 
   render() {
     return (
-      <li className="Num">
-        <input
-          className="Num__checkbox"
-          type="checkbox"
-          id={this.id}
-          checked={this.props.isChecked}
-          disabled={this.props.isDisabled}
-          onChange={this.handleChange}
-        />
-        <label
-          className="Num__label"
-          htmlFor={this.id}
-          >
-          {this.props.numName}
-        </label>
-      </li>
+      <ToggleButton
+        type="checkbox"
+        value={this.props.numName}
+        className="Num"
+        id={this.id}>
+        {this.props.numName}
+      </ToggleButton>
+      // <li className="Num">
+      //   <input
+      //     className="Num"
+      //     type="checkbox"
+      //     id={this.id}
+      //     checked={this.props.isChecked}
+      //     disabled={this.props.isDisabled}
+      //     onChange={this.handleChange}
+      //   />
+      //   <label className="Num__label" htmlFor={this.id}>
+      //     {this.props.numName}
+      //   </label>
+      // </li>
     );
   }
 }

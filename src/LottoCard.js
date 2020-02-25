@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { ButtonToolbar, ToggleButtonGroup } from 'react-bootstrap'
 import LottoCardHeader from './LottoCardHeader'
 import Num from './Num'
 import './LottoCard.scss'
@@ -47,9 +48,11 @@ class LottoCard extends Component {
       <li className="LottoCardListItem">
         <div className="LottoCard">
           <LottoCardHeader selectedNums={this.state.selectedNums} handleRemoveCard={this.props.handleRemoveCard.bind(this, this.props.id)} />
-          <ul className="LottoCard__numsList">
+          {/* <ul className="LottoCard__numsList"> */}
+          <ToggleButtonGroup type="checkbox">
             {nums()}
-          </ul>
+          </ToggleButtonGroup>
+          {/* </ul> */}
         </div>
       </li>
     )

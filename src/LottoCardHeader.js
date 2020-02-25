@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Button from "react-bootstrap/Button";
 import './LottoCardHeader.scss'
 
 class LottoCardHeader extends Component {
@@ -10,7 +11,7 @@ class LottoCardHeader extends Component {
 					{this.props.selectedNums.map((num, i) => <li key={i} className="LottoCardHeader__numList__num">{num}</li>)}
 				</ul>
 				<ul className="LottoCardHeader__actionsList">
-					<li className="LottoCardHeader__actionsList__item--remove"><button onClick={this.props.handleRemoveCard}>Remove</button></li>
+					<li className="LottoCardHeader__actionsList__item--remove"><Button onClick={this.props.handleRemoveCard}>Remove</Button></li>
 				</ul>
 			</div>
 		)
